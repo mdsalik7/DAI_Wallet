@@ -1,0 +1,343 @@
+{
+  "contractName": "SecondaryMock",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "PrimaryTransferred",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "primary",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "transferPrimary",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "onlyPrimaryMock",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"}],\"name\":\"PrimaryTransferred\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"onlyPrimaryMock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"primary\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"}],\"name\":\"transferPrimary\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"primary()\":{\"return\":\"the address of the primary.\"},\"transferPrimary(address)\":{\"details\":\"Transfers contract to a new primary.\",\"params\":{\"recipient\":\"The address of new primary.\"}}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/mocks/SecondaryMock.sol\":\"SecondaryMock\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436\",\"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG\"]},\"/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/mocks/SecondaryMock.sol\":{\"keccak256\":\"0x4529ca2e41a15dc9c5df5b69a967cb9bdaa615ed4bd49a23871777ceb702b02c\",\"urls\":[\"bzz-raw://8af23e1b8bd8e5d9bbd0a7fb7f4c45721e381eaeae8d5d04510eb5f28e604d73\",\"dweb:/ipfs/QmXEnw6vUTaUSRABJwoj8esd7mz2PyVPe8LiNNkpswRAYh\"]},\"/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/ownership/Secondary.sol\":{\"keccak256\":\"0xb55d511ea1d79aa4ff7063ac50d134a47c6d3b43b0ee7163e9310c403a945888\",\"urls\":[\"bzz-raw://3dbac745f30f95972c78216578173f098cf89fbcd7e976e26bcd6e8707553d61\",\"dweb:/ipfs/Qme7K9o8sEYRcwUfe5VNnpbGGiTyPYbrSxZNUkm2qXJ9VK\"]}},\"version\":1}",
+  "bytecode": "0x608060405260006100146100bf60201b60201c565b9050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f4101e71e974f68df5e9730cc223280b41654676bbb052cdcc735c3337e64d2d981604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a1506100c7565b600033905090565b610420806100d66000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80632348238c14610046578063846224251461008a578063c6dbdf6114610094575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100de565b005b6100926102b6565b005b61009c610364565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1661011e61038d565b73ffffffffffffffffffffffffffffffffffffffff161461018a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c8152602001806103c0602c913960400191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610210576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602a815260200180610396602a913960400191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f4101e71e974f68df5e9730cc223280b41654676bbb052cdcc735c3337e64d2d981604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166102f661038d565b73ffffffffffffffffffffffffffffffffffffffff1614610362576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c8152602001806103c0602c913960400191505060405180910390fd5b565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60003390509056fe5365636f6e646172793a206e6577207072696d61727920697320746865207a65726f20616464726573735365636f6e646172793a2063616c6c6572206973206e6f7420746865207072696d617279206163636f756e74a265627a7a723158205a2a696edd1d33ca107451f1f080e1eb9ef4eef2a5d5be49a333e8a90324ec0e64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80632348238c14610046578063846224251461008a578063c6dbdf6114610094575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100de565b005b6100926102b6565b005b61009c610364565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1661011e61038d565b73ffffffffffffffffffffffffffffffffffffffff161461018a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c8152602001806103c0602c913960400191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610210576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602a815260200180610396602a913960400191505060405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f4101e71e974f68df5e9730cc223280b41654676bbb052cdcc735c3337e64d2d981604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166102f661038d565b73ffffffffffffffffffffffffffffffffffffffff1614610362576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c8152602001806103c0602c913960400191505060405180910390fd5b565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60003390509056fe5365636f6e646172793a206e6577207072696d61727920697320746865207a65726f20616464726573735365636f6e646172793a2063616c6c6572206973206e6f7420746865207072696d617279206163636f756e74a265627a7a723158205a2a696edd1d33ca107451f1f080e1eb9ef4eef2a5d5be49a333e8a90324ec0e64736f6c63430005100032",
+  "sourceMap": "63:159:106:-;;;499:17:115;519:12;:10;;;:12;;:::i;:::-;499:32;;552:9;541:8;;:20;;;;;;;;;;;;;;;;;;576:29;595:9;576:29;;;;;;;;;;;;;;;;;;;;;;465:147;63:159:106;;788:96:2;833:15;867:10;860:17;;788:96;:::o;63:159:106:-;;;;;;;",
+  "deployedSourceMap": "63:159:106:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;63:159:106;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1106:232:115;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1106:232:115;;;;;;;;;;;;;;;;;;;:::i;:::-;;105:115:106;;;:::i;:::-;;902:81:115;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1106:232;762:8;;;;;;;;;;;746:24;;:12;:10;:12::i;:::-;:24;;;738:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1208:1;1187:23;;:9;:23;;;;1179:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1278:9;1267:8;;:20;;;;;;;;;;;;;;;;;;1302:29;1321:9;1302:29;;;;;;;;;;;;;;;;;;;;;;1106:232;:::o;105:115:106:-;762:8:115;;;;;;;;;;;746:24;;:12;:10;:12::i;:::-;:24;;;738:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;105:115:106:o;902:81:115:-;942:7;968:8;;;;;;;;;;;961:15;;902:81;:::o;788:96:2:-;833:15;867:10;860:17;;788:96;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"../ownership/Secondary.sol\";\n\ncontract SecondaryMock is Secondary {\n    function onlyPrimaryMock() public view onlyPrimary {\n        // solhint-disable-previous-line no-empty-blocks\n    }\n}\n",
+  "sourcePath": "E:\\Codes\\Blockchain\\DAI_Wallet\\src\\contracts\\openzeppelin\\contracts\\mocks\\SecondaryMock.sol",
+  "ast": {
+    "absolutePath": "/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/mocks/SecondaryMock.sol",
+    "exportedSymbols": {
+      "SecondaryMock": [
+        8426
+      ]
+    },
+    "id": 8427,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8416,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:106"
+      },
+      {
+        "absolutePath": "/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/ownership/Secondary.sol",
+        "file": "../ownership/Secondary.sol",
+        "id": 8417,
+        "nodeType": "ImportDirective",
+        "scope": 8427,
+        "sourceUnit": 8849,
+        "src": "25:36:106",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 8418,
+              "name": "Secondary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8848,
+              "src": "89:9:106",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Secondary_$8848",
+                "typeString": "contract Secondary"
+              }
+            },
+            "id": 8419,
+            "nodeType": "InheritanceSpecifier",
+            "src": "89:9:106"
+          }
+        ],
+        "contractDependencies": [
+          111,
+          8848
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 8426,
+        "linearizedBaseContracts": [
+          8426,
+          8848,
+          111
+        ],
+        "name": "SecondaryMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 8424,
+              "nodeType": "Block",
+              "src": "156:64:106",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 8425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 8422,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 8421,
+                  "name": "onlyPrimary",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8814,
+                  "src": "144:11:106",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "144:11:106"
+              }
+            ],
+            "name": "onlyPrimaryMock",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8420,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "129:2:106"
+            },
+            "returnParameters": {
+              "id": 8423,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:0:106"
+            },
+            "scope": 8426,
+            "src": "105:115:106",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 8427,
+        "src": "63:159:106"
+      }
+    ],
+    "src": "0:223:106"
+  },
+  "legacyAST": {
+    "absolutePath": "/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/mocks/SecondaryMock.sol",
+    "exportedSymbols": {
+      "SecondaryMock": [
+        8426
+      ]
+    },
+    "id": 8427,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8416,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:106"
+      },
+      {
+        "absolutePath": "/E/Codes/Blockchain/DAI_Wallet/src/contracts/openzeppelin/contracts/ownership/Secondary.sol",
+        "file": "../ownership/Secondary.sol",
+        "id": 8417,
+        "nodeType": "ImportDirective",
+        "scope": 8427,
+        "sourceUnit": 8849,
+        "src": "25:36:106",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 8418,
+              "name": "Secondary",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8848,
+              "src": "89:9:106",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Secondary_$8848",
+                "typeString": "contract Secondary"
+              }
+            },
+            "id": 8419,
+            "nodeType": "InheritanceSpecifier",
+            "src": "89:9:106"
+          }
+        ],
+        "contractDependencies": [
+          111,
+          8848
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 8426,
+        "linearizedBaseContracts": [
+          8426,
+          8848,
+          111
+        ],
+        "name": "SecondaryMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 8424,
+              "nodeType": "Block",
+              "src": "156:64:106",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 8425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 8422,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 8421,
+                  "name": "onlyPrimary",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8814,
+                  "src": "144:11:106",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "144:11:106"
+              }
+            ],
+            "name": "onlyPrimaryMock",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8420,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "129:2:106"
+            },
+            "returnParameters": {
+              "id": 8423,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:0:106"
+            },
+            "scope": 8426,
+            "src": "105:115:106",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 8427,
+        "src": "63:159:106"
+      }
+    ],
+    "src": "0:223:106"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.2",
+  "updatedAt": "2020-12-07T12:20:50.511Z",
+  "devdoc": {
+    "methods": {
+      "primary()": {
+        "return": "the address of the primary."
+      },
+      "transferPrimary(address)": {
+        "details": "Transfers contract to a new primary.",
+        "params": {
+          "recipient": "The address of new primary."
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
