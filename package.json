@@ -2,7 +2,7 @@
   "name": "eth-marketplace",
   "version": "0.1.0",
   "description": "DAI Wallet",
-  "author": "salikk.md@gmail,com",
+  "author": "salik.md@yahoo,com",
   "dependencies": {
     "@openzeppelin/contracts": "^3.3.0",
     "babel-polyfill": "6.26.0",
